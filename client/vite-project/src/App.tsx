@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+// import Header from "./features/layout/Header/Header";
+// import RouterDOM from "./features/router/RouterDOM";
+// import Footer from "./features/layout/Footer";
+import { Box, Container } from "@mui/material";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React  learn more
-      </p>
+      <Container sx={{ display: "flex", justifyContent: "center" }}>
+        {/* <Header /> */}
+        <Box
+          className="product-grid"
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            maxWidth: "90%",
+            justifyContent: "center",
+          }}
+        >
+          hii
+          {/* <RouterDOM /> */}
+        </Box>
+        {/* <Footer /> */}
+      </Container>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,0 +1,34 @@
+interface Donor {
+  Donor_ID: string;
+  oldDonor_ID: string;
+  oldDonor_ID2: string;
+  LastName: string;
+  Street: string;
+  StreetNumber: string;
+  City: string;
+  City_id: string;
+  Phone: string;
+  category: string;
+  category_id: string;
+  campaignName: string;
+  zone: string;
+  oldZone: string;
+  Folder: string;
+  Runway: string;
+  Contact: string;
+  NoteCollecting: string;
+  CheckAddress: string;
+  Checkgeneral: string;
+  Checkcampaign: string;
+  credit: string;
+  NotForCollecting: string;
+  Selection: string;
+  DateAddGreg: string;
+  DateAddHeb: string;
+  CampaignAdd: string;
+  lngCampaignAdd: string;
+  priority: string;
+  title: string;
+  latitude: string | number;
+  longitude: string | number;
+}
